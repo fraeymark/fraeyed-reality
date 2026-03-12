@@ -65,6 +65,7 @@
 </div>
 <script>
 let twitchUsername = "";
+const gameName = "Mill – Day"; // Change this for each game page  
 
 // Set username once
 function setUsername() {
@@ -101,6 +102,7 @@ function submitAnomaly() {
       username: twitchUsername,
       time: time,
       anomaly: anomaly
+      game: gameName
     })
   })
   .then(response => response.text())
@@ -118,4 +120,5 @@ function submitAnomaly() {
 </script>
 
 </body>
+
 </html>
